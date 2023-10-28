@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fron-End Pagination using vanilla js </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+
+    <h1 style="color: black;" >Fron-End Pagination using vanilla js </h1>
+
+    <main>
+        <section class="table">
+            <h1>Table Pagination</h1>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Leanne Graham</td>
+                        <td>Bret</td>
+                        <td>
+                            <a href="mailto:
+                            leanne@gmail.com">leanne@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ervin Howell</td>
+                        <td>Antonette</td>
+                        <td>
+                            <a href="mailto:
+                            antonette@yahoo.com">antonnette@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Clementine Bauch</td>
+                        <td>Samantha</td>
+                        <td>
+                            <a href="mailto:
+                            samanthaa@gmail.com">samanthaa@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Patricia Lebsack</td>
+                        <td>Karianne</td>
+                        <td>
+                            <a href="mailto:
+                            karianne@yahoo.com">karianne@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Chelsey Dietrich</td>
+                        <td>Kamren</td>
+                        <td>
+                            <a href="mailto:
+                            kamren@yahoo.com">kamren@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Dennis Schulist</td>
+                        <td>Leopoldo_Corkery</td>
+                        <td>
+                            <a href="mailto:
+                            leopoldocorkery@gmail.com">leopoldocorkery@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kurtis Weissnat</td>
+                        <td>Elwyn.Skiles</td>
+                        <td>
+                            <a href="mailto:
+                            elwynskiles@yahoo.com">elwynskiles@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Nicholas Runolfsdottir V</td>
+                        <td>Maxime_Nienow</td>
+                        <td>
+                            <a href="mailto:
+                            maximenienow@gmail.com">maximenienow@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Glenna Reichert</td>
+                        <td>Delphine</td>
+                        <td>
+                            <a href="mailto:
+                            delphinereichert@yahoo.com">delphinereichert@yahoo.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Clementina DuBuque</td>
+                        <td>Moriah.Stanton</td>
+                        <td>
+                            <a href="mailto:
+                            moriahstanton@gmail.com">moriahstanton@gmail.com</a></td>
+                    </tr>       
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button class="prev-btn">Prev</button>
+                <div class="page"></div>
+                <button class="next-btn">Next</button>
+                <div class="info"></div>
+        </section>
+        <hr>
+        <section class="list">
+            <h1>List Pagination</h1>
+            <ul>
+                <li>Leanne Graham</li>
+                <li>Ervin Howell</li>
+                <li>Clementine Bauch</li>
+                <li>Patricia Lebsack</li>
+                <li>Chelsey Dietrich</li>
+                <li>Dennis Schulist</li>
+                <li>Kurtis Weissnat</li>
+                <li>Nicholas Runolfsdottir V</li>
+                <li>Glenna Reichert</li>
+                <li>Clementina DuBuque</li>
+            </ul>
+            <div class="pagination">
+                <button class="prev-btn">Prev</button>
+                <div class="page"></div>
+                <button class="next-btn">Next</button>
+                <div class="info"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="blog">
+            <h1>Article Section Pagination</h1>
+            <div class="article">
+                <article>
+                    <h1>1. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+                <article>
+                    <h1>2. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+                <article>
+                    <h1>3. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+                <article>
+                    <h1>4. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+                <article>
+                    <h1>5. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+                <article>
+                    <h1>6. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </article>
+            </div>
+            <div class="pagination">
+                <button class="prev-btn">Prev</button>
+                <div class="page"></div>
+                <button class="next-btn">Next</button>
+                <div class="info"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="load">
+            <h1>Load More Pagination</h1>
+            <div class="container">
+                <div class="content">
+                    <h1>1. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div>
+                <div class="content">
+                    <h1>2. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div >
+                <div class="content">
+                    <h1>3. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div >
+                <div class="content">
+                    <h1>4. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div >
+                <div class="content">
+                    <h1>5. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div >
+                <div class="content">
+                    <h1>6. hola mundo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi est, minima illum, voluptas magnam quisquam expedita repellendus, consequuntur cum voluptates neque aliquid sit omnis ullam provident delectus corrupti! Voluptatem, ex.</p>
+                </div >
+
+            </div>
+            <div class="pagination load">
+                <button class="loadMore">Load More</button>
+                <div class="info"></div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

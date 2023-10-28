@@ -1,0 +1,34 @@
+.pagination:not(.list ul li){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .prev-btn, .next-btn{
+        margin-right: 10px;
+        border: none;
+        background-color: #666;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .page ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page ul li{
+        list-style: none;
+        margin: 0 5px;
+    }
+    .page ul li a{
+        text-decoration: none;
+        color: #666;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+    }
+    .page ul li a.active{
+        background-color: #000000;
+        color: #fff;
+    }
+}

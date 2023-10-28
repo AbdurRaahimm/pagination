@@ -1,0 +1,15 @@
+section.table {
+    padding-bottom: 30px;
+}
+.table table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table table td,
+.table table th{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+

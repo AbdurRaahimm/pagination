@@ -1,0 +1,37 @@
+@import url('./css/table.css');
+@import url('./css/section.css');
+@import url('./css/list.css');
+@import url(./css/pagination.css);
+@import url(./css/load.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f1f1f1; */
+}
+h1{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #666;
+    margin: 10px 0px;
+}
+
+main{
+    padding-bottom: 50px;
+}
+.hidden {
+    /* clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; */
+    display: none;
+  }
